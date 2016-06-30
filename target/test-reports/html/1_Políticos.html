@@ -35,20 +35,15 @@
 </nav>
 </div>
 <div class="clear"></div>
-<div class="testsuite error">
+<div class="testsuite success">
 <div class="header">
 <h2>Pol&iacute;ticos</h2>
 <h3>
                         Executed
-                        8
+                        5
                         tests
                     
-                        with
-                        2 errors
-
-                        and
-                        3 failures
-                        .
+                        without a single error or failure!
                     </h3>
 </div>
 <div class="testcase clearfix success grid_8 alpha omega" data-name="Adicionar politico nao existente">
@@ -56,7 +51,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">Adicionar politico nao existente</b>
 </p>
-<p class="summary">Executed in 0.114 seconds.</p>
+<p class="summary">Executed in 0.105 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -66,7 +61,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">Adicionar politico existente</b>
 </p>
-<p class="summary">Executed in 0.142 seconds.</p>
+<p class="summary">Executed in 0.092 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -76,7 +71,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">Atualizar o id de um politico</b>
 </p>
-<p class="summary">Executed in 0.132 seconds.</p>
+<p class="summary">Executed in 0.096 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -86,413 +81,19 @@
 <p>
 <span class="icon success"></span><b class="testname message success">Remover pol&iacute;tico existente</b>
 </p>
-<p class="summary">Executed in 0.143 seconds.</p>
+<p class="summary">Executed in 0.119 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
 </div>
-<div class="testcase clearfix failure grid_8 alpha omega" data-name="Novo pol&iacute;tico">
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Visualizar pol&iacute;tico">
 <div class="grid_3 alpha">
 <p>
-<span class="icon failure"></span><b class="testname message failure">Novo pol&iacute;tico</b>
+<span class="icon success"></span><b class="testname message success">Visualizar pol&iacute;tico</b>
 </p>
-<p class="summary">Executed in 0.144 seconds.</p>
+<p class="summary">Executed in 2.855 seconds.</p>
 </div>
-<div class="grid_5 omega outputinfo">
-<div class="details">
-<p>
-<b class="message">Undefined Step: Given que eu estou no menu &ldquo;Pol&iacute;ticos&rdquo;</b>
-</p>
-<pre>cucumber.runtime.UndefinedStepException: Undefined Step: Given que eu estou no menu &ldquo;Pol&iacute;ticos&rdquo;
-	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:250)
-	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:215)
-	at cucumber.runtime.Utils$1.call(Utils.java:37)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-	at cucumber.runtime.Utils.invoke(Utils.java:31)
-	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:243)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:280)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
-	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:59)
-	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:58)
-	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:148)
-	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:58)
-</pre>
-</div>
-<div class="details">
-<p>
-<b class="message">Undefined Step: And n&atilde;o existe nenhum pol&iacute;tico com o nome &ldquo;Anderson&rdquo; com o CPF &ldquo;102.102.152-15&rdquo;</b>
-</p>
-<pre>cucumber.runtime.UndefinedStepException: Undefined Step: And n&atilde;o existe nenhum pol&iacute;tico com o nome &ldquo;Anderson&rdquo; com o CPF &ldquo;102.102.152-15&rdquo;
-	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:250)
-	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:215)
-	at cucumber.runtime.Utils$1.call(Utils.java:37)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-	at cucumber.runtime.Utils.invoke(Utils.java:31)
-	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:243)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:280)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
-	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:59)
-	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:58)
-	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:148)
-	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:58)
-</pre>
-</div>
-<div class="details">
-<p>
-<b class="message">Undefined Step: When eu seleciono a op&ccedil;&atilde;o &ldquo;Cadastrar&rdquo;</b>
-</p>
-<pre>cucumber.runtime.UndefinedStepException: Undefined Step: When eu seleciono a op&ccedil;&atilde;o &ldquo;Cadastrar&rdquo;
-	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:250)
-	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:215)
-	at cucumber.runtime.Utils$1.call(Utils.java:37)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-	at cucumber.runtime.Utils.invoke(Utils.java:31)
-	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:243)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:280)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
-	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:59)
-	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:58)
-	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:148)
-	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:58)
-</pre>
-</div>
-<div class="details">
-<p>
-<b class="message">Undefined Step: And eu tento cadastrar o pol&iacute;tico &ldquo;Anderson&rdquo; com CPF &ldquo;102.102.152-15&rdquo; e seleciono &ldquo;Salvar&rdquo;</b>
-</p>
-<pre>cucumber.runtime.UndefinedStepException: Undefined Step: And eu tento cadastrar o pol&iacute;tico &ldquo;Anderson&rdquo; com CPF &ldquo;102.102.152-15&rdquo; e seleciono &ldquo;Salvar&rdquo;
-	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:250)
-	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:215)
-	at cucumber.runtime.Utils$1.call(Utils.java:37)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-	at cucumber.runtime.Utils.invoke(Utils.java:31)
-	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:243)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:280)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
-	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:59)
-	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:58)
-	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:148)
-	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:58)
-</pre>
-</div>
-<div class="details">
-<p>
-<b class="message">Undefined Step: Then eu recebo a mensagem de confirma&ccedil;&atilde;o</b>
-</p>
-<pre>cucumber.runtime.UndefinedStepException: Undefined Step: Then eu recebo a mensagem de confirma&ccedil;&atilde;o
-	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:250)
-	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:215)
-	at cucumber.runtime.Utils$1.call(Utils.java:37)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-	at cucumber.runtime.Utils.invoke(Utils.java:31)
-	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:243)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:280)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
-	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:59)
-	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:58)
-	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:148)
-	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:58)
-</pre>
-</div>
-<div class="details">
-<p>
-<b class="message">Undefined Step: And Consigo ver as informa&ccedil;&otilde;es do pol&iacute;tico cadastrado</b>
-</p>
-<pre>cucumber.runtime.UndefinedStepException: Undefined Step: And Consigo ver as informa&ccedil;&otilde;es do pol&iacute;tico cadastrado
-	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:250)
-	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:215)
-	at cucumber.runtime.Utils$1.call(Utils.java:37)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-	at cucumber.runtime.Utils.invoke(Utils.java:31)
-	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:243)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:280)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
-	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:59)
-	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:58)
-	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:148)
-	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:58)
-</pre>
-</div>
-</div>
-<div class="clear"></div>
-</div>
-<div class="testcase clearfix failure grid_8 alpha omega" data-name="Editar informa&ccedil;&otilde;es de um politico">
-<div class="grid_3 alpha">
-<p>
-<span class="icon failure"></span><b class="testname message failure">Editar informa&ccedil;&otilde;es de um politico</b>
-</p>
-<p class="summary">Executed in 0.114 seconds.</p>
-</div>
-<div class="grid_5 omega outputinfo">
-<div class="details">
-<p>
-<b class="message">Undefined Step: Given que o usu&aacute;rio esta na tela de atualizar pol&iacute;tico visualizando o  pol&iacute;tico &ldquo;Eduardo&rdquo; com cpf &ldquo;01234567890&rdquo;</b>
-</p>
-<pre>cucumber.runtime.UndefinedStepException: Undefined Step: Given que o usu&aacute;rio esta na tela de atualizar pol&iacute;tico visualizando o  pol&iacute;tico &ldquo;Eduardo&rdquo; com cpf &ldquo;01234567890&rdquo;
-	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:250)
-	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:215)
-	at cucumber.runtime.Utils$1.call(Utils.java:37)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-	at cucumber.runtime.Utils.invoke(Utils.java:31)
-	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:243)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:280)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
-	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:59)
-	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:58)
-	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:148)
-	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:58)
-</pre>
-</div>
-<div class="details">
-<p>
-<b class="message">Undefined Step: When ao  tentar atualizar os dados do pol&iacute;tico &ldquo;Eduardo&rdquo; com cpf &ldquo;01234567890&rdquo;</b>
-</p>
-<pre>cucumber.runtime.UndefinedStepException: Undefined Step: When ao  tentar atualizar os dados do pol&iacute;tico &ldquo;Eduardo&rdquo; com cpf &ldquo;01234567890&rdquo;
-	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:250)
-	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:215)
-	at cucumber.runtime.Utils$1.call(Utils.java:37)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-	at cucumber.runtime.Utils.invoke(Utils.java:31)
-	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:243)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:280)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
-	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:59)
-	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:58)
-	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:148)
-	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:58)
-</pre>
-</div>
-<div class="details">
-<p>
-<b class="message">Undefined Step: Then eu recebo a mensagem de confirma&ccedil;&atilde;o</b>
-</p>
-<pre>cucumber.runtime.UndefinedStepException: Undefined Step: Then eu recebo a mensagem de confirma&ccedil;&atilde;o
-	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:250)
-	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:215)
-	at cucumber.runtime.Utils$1.call(Utils.java:37)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-	at cucumber.runtime.Utils.invoke(Utils.java:31)
-	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:243)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:280)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
-	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:59)
-	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:58)
-	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:148)
-	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:58)
-</pre>
-</div>
-<div class="details">
-<p>
-<b class="message">Undefined Step: And Consigo ver as informa&ccedil;&otilde;es do pol&iacute;tico cadastrado</b>
-</p>
-<pre>cucumber.runtime.UndefinedStepException: Undefined Step: And Consigo ver as informa&ccedil;&otilde;es do pol&iacute;tico cadastrado
-	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:250)
-	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:215)
-	at cucumber.runtime.Utils$1.call(Utils.java:37)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-	at cucumber.runtime.Utils.invoke(Utils.java:31)
-	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:243)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:280)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
-	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:59)
-	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:58)
-	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:148)
-	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:58)
-</pre>
-</div>
-</div>
-<div class="clear"></div>
-</div>
-<div class="testcase clearfix error grid_8 alpha omega" data-name="Visualizar pol&iacute;tico">
-<div class="grid_3 alpha">
-<p>
-<span class="icon error"></span><b class="testname message error">Visualizar pol&iacute;tico</b>
-</p>
-<p class="summary">Executed in 0.155 seconds.</p>
-</div>
-<div class="grid_5 omega outputinfo">
-<div class="details">
-<p>
-<b class="message">failed to create driver from callback 'script14671788952801314453061$_run_closure1@49043f16'</b>
-</p>
-<pre>geb.driver.DriverCreationException: failed to create driver from callback 'script14671788952801314453061$_run_closure1@49043f16'
-	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
-	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
-	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
-	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:79)
-	at geb.Configuration.createDriver(Configuration.groovy:354)
-	at geb.Configuration.getDriver(Configuration.groovy:343)
-	at geb.Browser.getDriver(Browser.groovy:105)
-	at geb.Browser.go(Browser.groovy:394)
-	at geb.Page.to(Page.groovy:184)
-	at geb.Browser.via(Browser.groovy:475)
-	at geb.Browser.to(Browser.groovy:434)
-	at geb.Browser.to(Browser.groovy:412)
-	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:72)
-	at PoliticoSteps$_run_closure11.doCall(PoliticoSteps.groovy:103)
-	at ✽.Given que o usuario esta no menu de pol&iacute;tico e quer visualizar os detalhes do pol&iacute;tico com o cpf "98765432109"(Politico.feature:43)
-Caused by: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Preto\Desktop\thay\ObrasPublicas\chromedrivers\chromedrivermac
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:177)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:107)
-	at script14671788952801314453061$_run_closure1.doCall(script14671788952801314453061.groovy:8)
-	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
-	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
-	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
-	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:79)
-	at geb.Configuration.createDriver(Configuration.groovy:354)
-	at geb.Configuration.getDriver(Configuration.groovy:343)
-	at geb.Browser.getDriver(Browser.groovy:105)
-	at geb.Browser.go(Browser.groovy:394)
-	at geb.Page.to(Page.groovy:184)
-	at geb.Browser.via(Browser.groovy:475)
-	at geb.Browser.to(Browser.groovy:434)
-	at geb.Browser.to(Browser.groovy:412)
-	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:72)
-	at PoliticoSteps$_run_closure11.doCall(PoliticoSteps.groovy:103)
-	at cucumber.runtime.groovy.GroovyBackend.invoke(GroovyBackend.java:155)
-	at cucumber.runtime.groovy.GroovyStepDefinition$1.call(GroovyStepDefinition.java:71)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-	at cucumber.runtime.groovy.GroovyStepDefinition.execute(GroovyStepDefinition.java:68)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:298)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
-	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:59)
-	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:58)
-	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:148)
-	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:58)
-	at _GrailsTest$_run_closure1.doCall(_GrailsTest.groovy:102)
-	at TestApp$_run_closure1.doCall(TestApp.groovy:32)
-</pre>
-</div>
-</div>
-<div class="clear"></div>
-</div>
-<div class="testcase clearfix error grid_8 alpha omega" data-name="Visualizar taxa de atraso de obras de um pol&iacute;tico">
-<div class="grid_3 alpha">
-<p>
-<span class="icon error"></span><b class="testname message error">Visualizar taxa de atraso de obras de um pol&iacute;tico</b>
-</p>
-<p class="summary">Executed in 0.044 seconds.</p>
-</div>
-<div class="grid_5 omega outputinfo">
-<div class="details">
-<p>
-<b class="message">failed to create driver from callback 'script14671788954231314453061$_run_closure1@32a9def7'</b>
-</p>
-<pre>geb.driver.DriverCreationException: failed to create driver from callback 'script14671788954231314453061$_run_closure1@32a9def7'
-	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
-	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
-	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
-	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:79)
-	at geb.Configuration.createDriver(Configuration.groovy:354)
-	at geb.Configuration.getDriver(Configuration.groovy:343)
-	at geb.Browser.getDriver(Browser.groovy:105)
-	at geb.Browser.go(Browser.groovy:394)
-	at geb.Page.to(Page.groovy:184)
-	at geb.Browser.via(Browser.groovy:475)
-	at geb.Browser.to(Browser.groovy:434)
-	at geb.Browser.to(Browser.groovy:412)
-	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:72)
-	at PoliticoSteps$_run_closure14.doCall(PoliticoSteps.groovy:128)
-	at ✽.Given que o usuario esta no menu de pol&iacute;tico e tem um pol&iacute;tico com o cpf "98765432109"(Politico.feature:48)
-Caused by: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Preto\Desktop\thay\ObrasPublicas\chromedrivers\chromedrivermac
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:177)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:107)
-	at script14671788954231314453061$_run_closure1.doCall(script14671788954231314453061.groovy:8)
-	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
-	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
-	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
-	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:79)
-	at geb.Configuration.createDriver(Configuration.groovy:354)
-	at geb.Configuration.getDriver(Configuration.groovy:343)
-	at geb.Browser.getDriver(Browser.groovy:105)
-	at geb.Browser.go(Browser.groovy:394)
-	at geb.Page.to(Page.groovy:184)
-	at geb.Browser.via(Browser.groovy:475)
-	at geb.Browser.to(Browser.groovy:434)
-	at geb.Browser.to(Browser.groovy:412)
-	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:72)
-	at PoliticoSteps$_run_closure14.doCall(PoliticoSteps.groovy:128)
-	at cucumber.runtime.groovy.GroovyBackend.invoke(GroovyBackend.java:155)
-	at cucumber.runtime.groovy.GroovyStepDefinition$1.call(GroovyStepDefinition.java:71)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-	at cucumber.runtime.groovy.GroovyStepDefinition.execute(GroovyStepDefinition.java:68)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:298)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
-	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:59)
-	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:58)
-	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:148)
-	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:58)
-	at _GrailsTest$_run_closure1.doCall(_GrailsTest.groovy:102)
-	at TestApp$_run_closure1.doCall(TestApp.groovy:32)
-</pre>
-</div>
-<div class="details">
-<p>
-<b class="message">Undefined Step: And existe "1" obra atrasada associada ao pol&iacute;tico com cpf "98765432109"</b>
-</p>
-<pre>cucumber.runtime.UndefinedStepException: Undefined Step: And existe "1" obra atrasada associada ao pol&iacute;tico com cpf "98765432109"
-	at grails.plugin.cucumber.CucumberFormatter.resultUndefined(CucumberFormatter.groovy:250)
-	at grails.plugin.cucumber.CucumberFormatter.result(CucumberFormatter.groovy:215)
-	at cucumber.runtime.Utils$1.call(Utils.java:37)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-	at cucumber.runtime.Utils.invoke(Utils.java:31)
-	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:243)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:280)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
-	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:59)
-	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:58)
-	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:148)
-	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:58)
-</pre>
-</div>
-</div>
+<div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
 </div>
 <div class="clearfix output footer">
@@ -522,227 +123,17 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
     When eu tentar atualizar o id do politico de CPF "01234567891&rdquo;    # PoliticoSteps.groovy:44
     Then o politico de CPF "01234567891" tera seu id atualizado       # PoliticoSteps.groovy:50
 
---Output from Novo pol&iacute;tico--
+--Output from Visualizar pol&iacute;tico--
   Scenario: Remover pol&iacute;tico existente                                # Politico.feature:21
     Given o politico com CPF "01234567891&rdquo; esta armazenado no sistema # PoliticoSteps.groovy:37
     When eu tentar remover o politico de CPF &ldquo;01234567891&rdquo;            # PoliticoSteps.groovy:61
     Then o politico de CPF &ldquo;01234567891&rdquo; sera removido                # PoliticoSteps.groovy:68
 
---Output from Editar informa&ccedil;&otilde;es de um politico--
   #GUI
-  Scenario: Novo pol&iacute;tico                                                                      # Politico.feature:28
-    Given que eu estou no menu &ldquo;Pol&iacute;ticos&rdquo;
-    And n&atilde;o existe nenhum pol&iacute;tico com o nome &ldquo;Anderson&rdquo; com o CPF &ldquo;102.102.152-15&rdquo;
-    When eu seleciono a op&ccedil;&atilde;o &ldquo;Cadastrar&rdquo;
-    And eu tento cadastrar o pol&iacute;tico &ldquo;Anderson&rdquo; com CPF &ldquo;102.102.152-15&rdquo; e seleciono &ldquo;Salvar&rdquo;
-    Then eu recebo a mensagem de confirma&ccedil;&atilde;o
-    And Consigo ver as informa&ccedil;&otilde;es do pol&iacute;tico cadastrado
-
---Output from Visualizar pol&iacute;tico--
-  Scenario: Editar informa&ccedil;&otilde;es de um politico                                                                       # Politico.feature:36
-    Given que o usu&aacute;rio esta na tela de atualizar pol&iacute;tico visualizando o  pol&iacute;tico &ldquo;Eduardo&rdquo; com cpf &ldquo;01234567890&rdquo;
-    When ao  tentar atualizar os dados do pol&iacute;tico &ldquo;Eduardo&rdquo; com cpf &ldquo;01234567890&rdquo;
-    Then eu recebo a mensagem de confirma&ccedil;&atilde;o
-    And Consigo ver as informa&ccedil;&otilde;es do pol&iacute;tico cadastrado
-
---Output from Visualizar taxa de atraso de obras de um pol&iacute;tico--
-  Scenario: Visualizar pol&iacute;tico                                                                                    # Politico.feature:42
+  Scenario: Visualizar pol&iacute;tico                                                                                    # Politico.feature:28
     Given que o usuario esta no menu de pol&iacute;tico e quer visualizar os detalhes do pol&iacute;tico com o cpf "98765432109" # PoliticoSteps.groovy:100
-      geb.driver.DriverCreationException: failed to create driver from callback 'script14671788952801314453061$_run_closure1@49043f16'
-      	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
-      	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
-      	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)
-      	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
-      	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:79)
-      	at geb.Configuration.createDriver(Configuration.groovy:354)
-      	at geb.Configuration.getDriver(Configuration.groovy:343)
-      	at geb.Browser.getDriver(Browser.groovy:105)
-      	at geb.Browser.go(Browser.groovy:394)
-      	at geb.Browser$go$3.call(Unknown Source)
-      	at geb.Page.to(Page.groovy:184)
-      	at geb.Browser.via(Browser.groovy:475)
-      	at geb.Browser$via$2.callCurrent(Unknown Source)
-      	at geb.Browser.to(Browser.groovy:434)
-      	at geb.Browser$to$1.callCurrent(Unknown Source)
-      	at geb.Browser.to(Browser.groovy:412)
-      	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:72)
-      	at PoliticoSteps$_run_closure11.doCall(PoliticoSteps.groovy:103)
-      	at ✽.Given que o usuario esta no menu de pol&iacute;tico e quer visualizar os detalhes do pol&iacute;tico com o cpf "98765432109"(Politico.feature:43)
-      Caused by: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Preto\Desktop\thay\ObrasPublicas\chromedrivers\chromedrivermac
-      	at com.google.common.base.Preconditions.checkState(Preconditions.java:177)
-      	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
-      	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
-      	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
-      	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:107)
-      	at script14671788952801314453061$_run_closure1.doCall(script14671788952801314453061.groovy:8)
-      	at script14671788952801314453061$_run_closure1.doCall(script14671788952801314453061.groovy)
-      	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
-      	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
-      	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)
-      	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
-      	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:79)
-      	at geb.Configuration.createDriver(Configuration.groovy:354)
-      	at geb.Configuration.getDriver(Configuration.groovy:343)
-      	at geb.Browser.getDriver(Browser.groovy:105)
-      	at geb.Browser.go(Browser.groovy:394)
-      	at geb.Browser$go$3.call(Unknown Source)
-      	at geb.Page.to(Page.groovy:184)
-      	at geb.Browser.via(Browser.groovy:475)
-      	at geb.Browser$via$2.callCurrent(Unknown Source)
-      	at geb.Browser.to(Browser.groovy:434)
-      	at geb.Browser$to$1.callCurrent(Unknown Source)
-      	at geb.Browser.to(Browser.groovy:412)
-      	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:72)
-      	at PoliticoSteps$_run_closure11.doCall(PoliticoSteps.groovy:103)
-      	at cucumber.runtime.groovy.GroovyBackend.invoke(GroovyBackend.java:155)
-      	at cucumber.runtime.groovy.GroovyStepDefinition$1.call(GroovyStepDefinition.java:71)
-      	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-      	at cucumber.runtime.groovy.GroovyStepDefinition.execute(GroovyStepDefinition.java:68)
-      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-      	at cucumber.runtime.Runtime.runStep(Runtime.java:298)
-      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
-      	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
-      	at cucumber.runtime.model.CucumberFeature$run$0.call(Unknown Source)
-      	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:59)
-      	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:58)
-      	at grails.plugin.cucumber.Cucumber$run$1.call(Unknown Source)
-      	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:148)
-      	at grails.plugin.cucumber.CucumberTestType.this$3$runFeatures(CucumberTestType.groovy)
-      	at grails.plugin.cucumber.CucumberTestType$this$3$runFeatures$3.callCurrent(Unknown Source)
-      	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:58)
-      	at _GrailsTest$_run_closure1.doCall(_GrailsTest.groovy:102)
-      	at org.codehaus.gant.GantMetaClass.invokeMethod(GantMetaClass.java:133)
-      	at org.codehaus.gant.GantBinding$_initializeGantBinding_closure5_closure16_closure18.doCall(GantBinding.groovy:185)
-      	at org.codehaus.gant.GantBinding$_initializeGantBinding_closure5_closure16_closure18.doCall(GantBinding.groovy)
-      	at org.codehaus.gant.GantBinding.withTargetEvent(GantBinding.groovy:90)
-      	at org.codehaus.gant.GantBinding.this$4$withTargetEvent(GantBinding.groovy)
-      	at org.codehaus.gant.GantBinding$_initializeGantBinding_closure5_closure16.doCall(GantBinding.groovy:185)
-      	at org.codehaus.gant.GantBinding$_initializeGantBinding_closure5_closure16.doCall(GantBinding.groovy)
-      	at org.codehaus.gant.GantMetaClass.invokeMethod(GantMetaClass.java:133)
-      	at TestApp$_run_closure1.doCall(TestApp.groovy:32)
-      	at org.codehaus.gant.GantMetaClass.invokeMethod(GantMetaClass.java:133)
-      	at org.codehaus.gant.GantBinding$_initializeGantBinding_closure5_closure16_closure18.doCall(GantBinding.groovy:185)
-      	at org.codehaus.gant.GantBinding$_initializeGantBinding_closure5_closure16_closure18.doCall(GantBinding.groovy)
-      	at org.codehaus.gant.GantBinding.withTargetEvent(GantBinding.groovy:90)
-      	at org.codehaus.gant.GantBinding.this$4$withTargetEvent(GantBinding.groovy)
-      	at org.codehaus.gant.GantBinding$_initializeGantBinding_closure5_closure16.doCall(GantBinding.groovy:185)
-      	at org.codehaus.gant.GantBinding$_initializeGantBinding_closure5_closure16.doCall(GantBinding.groovy)
-      	at gant.Gant$_dispatch_closure5.doCall(Gant.groovy:381)
-      	at gant.Gant$_dispatch_closure7.doCall(Gant.groovy:415)
-      	at gant.Gant$_dispatch_closure7.doCall(Gant.groovy)
-      	at gant.Gant.withBuildListeners(Gant.groovy:427)
-      	at gant.Gant.this$2$withBuildListeners(Gant.groovy)
-      	at gant.Gant$this$2$withBuildListeners$0.callCurrent(Unknown Source)
-      	at gant.Gant.dispatch(Gant.groovy:415)
-      	at gant.Gant.this$2$dispatch(Gant.groovy)
-      	at gant.Gant.invokeMethod(Gant.groovy)
-      	at gant.Gant.executeTargets(Gant.groovy:591)
-      	at gant.Gant.executeTargets(Gant.groovy:590)
-
     When o usuario seleciona o pol&iacute;tico com o cpf "98765432109"                                                    # PoliticoSteps.groovy:107
     Then o sistema exibe os detalhes do pol&iacute;tico com o cpf "98765432109"                                           # PoliticoSteps.groovy:114
-
-  Scenario: Visualizar taxa de atraso de obras de um pol&iacute;tico                              # Politico.feature:47
-    Given que o usuario esta no menu de pol&iacute;tico e tem um pol&iacute;tico com o cpf "98765432109" # PoliticoSteps.groovy:125
-      geb.driver.DriverCreationException: failed to create driver from callback 'script14671788954231314453061$_run_closure1@32a9def7'
-      	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:35)
-      	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
-      	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)
-      	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
-      	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:79)
-      	at geb.Configuration.createDriver(Configuration.groovy:354)
-      	at geb.Configuration.getDriver(Configuration.groovy:343)
-      	at geb.Browser.getDriver(Browser.groovy:105)
-      	at geb.Browser.go(Browser.groovy:394)
-      	at geb.Browser$go$3.call(Unknown Source)
-      	at geb.Page.to(Page.groovy:184)
-      	at geb.Browser.via(Browser.groovy:475)
-      	at geb.Browser$via$2.callCurrent(Unknown Source)
-      	at geb.Browser.to(Browser.groovy:434)
-      	at geb.Browser$to$1.callCurrent(Unknown Source)
-      	at geb.Browser.to(Browser.groovy:412)
-      	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:72)
-      	at PoliticoSteps$_run_closure14.doCall(PoliticoSteps.groovy:128)
-      	at ✽.Given que o usuario esta no menu de pol&iacute;tico e tem um pol&iacute;tico com o cpf "98765432109"(Politico.feature:48)
-      Caused by: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Preto\Desktop\thay\ObrasPublicas\chromedrivers\chromedrivermac
-      	at com.google.common.base.Preconditions.checkState(Preconditions.java:177)
-      	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
-      	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
-      	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
-      	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:107)
-      	at script14671788954231314453061$_run_closure1.doCall(script14671788954231314453061.groovy:8)
-      	at script14671788954231314453061$_run_closure1.doCall(script14671788954231314453061.groovy)
-      	at geb.driver.CallbackDriverFactory.getDriver(CallbackDriverFactory.groovy:29)
-      	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy:80)
-      	at geb.driver.CachingDriverFactory$_getDriver_closure3.doCall(CachingDriverFactory.groovy)
-      	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:30)
-      	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:79)
-      	at geb.Configuration.createDriver(Configuration.groovy:354)
-      	at geb.Configuration.getDriver(Configuration.groovy:343)
-      	at geb.Browser.getDriver(Browser.groovy:105)
-      	at geb.Browser.go(Browser.groovy:394)
-      	at geb.Browser$go$3.call(Unknown Source)
-      	at geb.Page.to(Page.groovy:184)
-      	at geb.Browser.via(Browser.groovy:475)
-      	at geb.Browser$via$2.callCurrent(Unknown Source)
-      	at geb.Browser.to(Browser.groovy:434)
-      	at geb.Browser$to$1.callCurrent(Unknown Source)
-      	at geb.Browser.to(Browser.groovy:412)
-      	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:72)
-      	at PoliticoSteps$_run_closure14.doCall(PoliticoSteps.groovy:128)
-      	at cucumber.runtime.groovy.GroovyBackend.invoke(GroovyBackend.java:155)
-      	at cucumber.runtime.groovy.GroovyStepDefinition$1.call(GroovyStepDefinition.java:71)
-      	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-      	at cucumber.runtime.groovy.GroovyStepDefinition.execute(GroovyStepDefinition.java:68)
-      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-      	at cucumber.runtime.Runtime.runStep(Runtime.java:298)
-      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
-      	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
-      	at cucumber.runtime.model.CucumberFeature$run$0.call(Unknown Source)
-      	at grails.plugin.cucumber.Cucumber$_run_closure2.doCall(Cucumber.groovy:59)
-      	at grails.plugin.cucumber.Cucumber.run(Cucumber.groovy:58)
-      	at grails.plugin.cucumber.Cucumber$run$1.call(Unknown Source)
-      	at grails.plugin.cucumber.CucumberTestType.runFeatures(CucumberTestType.groovy:148)
-      	at grails.plugin.cucumber.CucumberTestType.this$3$runFeatures(CucumberTestType.groovy)
-      	at grails.plugin.cucumber.CucumberTestType$this$3$runFeatures$3.callCurrent(Unknown Source)
-      	at grails.plugin.cucumber.CucumberTestType.doRun(CucumberTestType.groovy:58)
-      	at _GrailsTest$_run_closure1.doCall(_GrailsTest.groovy:102)
-      	at org.codehaus.gant.GantMetaClass.invokeMethod(GantMetaClass.java:133)
-      	at org.codehaus.gant.GantBinding$_initializeGantBinding_closure5_closure16_closure18.doCall(GantBinding.groovy:185)
-      	at org.codehaus.gant.GantBinding$_initializeGantBinding_closure5_closure16_closure18.doCall(GantBinding.groovy)
-      	at org.codehaus.gant.GantBinding.withTargetEvent(GantBinding.groovy:90)
-      	at org.codehaus.gant.GantBinding.this$4$withTargetEvent(GantBinding.groovy)
-      	at org.codehaus.gant.GantBinding$_initializeGantBinding_closure5_closure16.doCall(GantBinding.groovy:185)
-      	at org.codehaus.gant.GantBinding$_initializeGantBinding_closure5_closure16.doCall(GantBinding.groovy)
-      	at org.codehaus.gant.GantMetaClass.invokeMethod(GantMetaClass.java:133)
-      	at TestApp$_run_closure1.doCall(TestApp.groovy:32)
-      	at org.codehaus.gant.GantMetaClass.invokeMethod(GantMetaClass.java:133)
-      	at org.codehaus.gant.GantBinding$_initializeGantBinding_closure5_closure16_closure18.doCall(GantBinding.groovy:185)
-      	at org.codehaus.gant.GantBinding$_initializeGantBinding_closure5_closure16_closure18.doCall(GantBinding.groovy)
-      	at org.codehaus.gant.GantBinding.withTargetEvent(GantBinding.groovy:90)
-      	at org.codehaus.gant.GantBinding.this$4$withTargetEvent(GantBinding.groovy)
-      	at org.codehaus.gant.GantBinding$_initializeGantBinding_closure5_closure16.doCall(GantBinding.groovy:185)
-      	at org.codehaus.gant.GantBinding$_initializeGantBinding_closure5_closure16.doCall(GantBinding.groovy)
-      	at gant.Gant$_dispatch_closure5.doCall(Gant.groovy:381)
-      	at gant.Gant$_dispatch_closure7.doCall(Gant.groovy:415)
-      	at gant.Gant$_dispatch_closure7.doCall(Gant.groovy)
-      	at gant.Gant.withBuildListeners(Gant.groovy:427)
-      	at gant.Gant.this$2$withBuildListeners(Gant.groovy)
-      	at gant.Gant$this$2$withBuildListeners$0.callCurrent(Unknown Source)
-      	at gant.Gant.dispatch(Gant.groovy:415)
-      	at gant.Gant.this$2$dispatch(Gant.groovy)
-      	at gant.Gant.invokeMethod(Gant.groovy)
-      	at gant.Gant.executeTargets(Gant.groovy:591)
-      	at gant.Gant.executeTargets(Gant.groovy:590)
-
-    And existe "2" obra associada ao pol&iacute;tico com o cpf "98765432109"                      # PoliticoSteps.groovy:131
-    And existe "1" obra atrasada associada ao pol&iacute;tico com cpf "98765432109"
-    When o usu&aacute;rio seleciona a op&ccedil;ao de taxa de atraso                                     # PoliticoSteps.groovy:152
-    Then ele visualizar&aacute; "50" % como sendo a taxa de atraso                                # PoliticoSteps.groovy:156
 </pre>
 </div>
 <div class="syserr">
@@ -752,10 +143,7 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
 --Output from Adicionar politico existente--
 --Output from Atualizar o id de um politico--
 --Output from Remover pol&iacute;tico existente--
---Output from Novo pol&iacute;tico--
---Output from Editar informa&ccedil;&otilde;es de um politico--
---Output from Visualizar pol&iacute;tico--
---Output from Visualizar taxa de atraso de obras de um pol&iacute;tico--</pre>
+--Output from Visualizar pol&iacute;tico--</pre>
 </div>
 </div>
 <div class="clear"></div>

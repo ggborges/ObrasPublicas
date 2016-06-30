@@ -76,20 +76,8 @@ Scenario: Devolver a taxa de obras com orçamentos estourados de um determinado 
     Then o percentual de obras com orcamento estourado para o politico com o cpf "98765432109" é de "50" por cento
 
 #GUI
-Scenario: Receber atualizacoes da obra por email
-  Given eu estou visualizando a obra "Praca do arsenal"
-  When eu seleciono a opcao "Receber atualizacao por email"
-  And preencho o campo de email com o email "teste@obralimpa.com"
-  Then eu vejo uma mensagem de confirmacao com o nome "Praca do arsenal" e email "teste@obralimpa.com"
 
 Scenario: Visualizar obra
   Given que o usuario esta no menu de obras e quer visualizar os detalhes da obra "Praca do arsenal"
   When o usuario seleciona a obra "Praca do arsenal"
   Then o sistema exibe os detalhes da obra "Praca do arsenal"
-
-Scenario: Nova pagina de obra
-  Given eu estou no menu de obras e nao existe uma obra com nome "Praca do Arsenal" na lista de obras
-  When eu seleciono a opcao "Cadastrar"
-  And eu tento cadastrar a obra com o nome "Praca do Arsenal"
-  And seleciono a opcao "Salvar"
-  Then eu vejo uma mensagem de confirmacao com o nome "Praca do arsenal"

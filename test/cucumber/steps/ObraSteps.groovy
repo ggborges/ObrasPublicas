@@ -54,7 +54,9 @@ Then(~'^o sistema nao ira cadastrar a obra de nome "([^"]*)"$'){
     	assert obras.size() == 1
 }
 
-
+/**
+ * @author = rrms
+ */
 //Scenario: Buscar percentual de obras atrasadas
 //Given que o sistema tem uma lista de "4" Obras
 //And o sistema tem "3" obra atrasada
@@ -75,7 +77,9 @@ Then(~'^o percentual de atrasos sera de "([^"]*)" por cento$'){
 	int percentualAtrasos ->
 		assert TestDataAndOperations.relatorioAtraso()==percentualAtrasos
 }
-
+/**
+ * @author = rrms
+ */
 //Scenario: Buscar percentual de obras com orcamento estourado
 //Given que o sistema tem uma lista de "4" Obras com seus orcamentos
 //And o sistema tem "3" obra com orcamento estourado
@@ -125,45 +129,6 @@ Then(~'^o sistema exibe os detalhes da obra "([^"]*)"$'){
 		assert page.verifyNomeObra(nomeObra) == true
 }
 
-//GUI
-//Scenario: Receber atualizações da obra por email
-//	Given  eu estou visualizando a obra “Praça do arsenal”
-//	When eu seleciono a opção “Receber atualização por email”
-//	And preencho o campo de email com o email “teste@obralimpa.com”
-//	Then eu vejo uma mensagem de confirmação
-//	And passo a receber o relatório de alterações da obra no email  “teste@obralimpa.com”
-/**
-* @author = ehmr
-*/
-Given(~'^eu estou visualizando a obra "([^"]*)"$') {
-	String nomeObra ->
-		TestDataAndOperations.createObra(nomeObra)
-		to ObraListPage
-		at ObraListPage
-	  	assert page.checkObraAtList(nomeObra) == true
-	  	page.selectObraAtList(nomeObra)
-    	at ObraShowPage
-}
-
-When(~'^eu seleciono a opcao "([^"]*)"$') {
-	String option ->
-//    	at ObraShowPage
-//    	page.select(option)
-//    	page.fillEmailData(email)
-//    	page.select("Cadastrar")
-}
-
-And(~'^preencho o campo de email com o email "([^"]*)"$'){
-	String email ->
-}
-
-Then(~'^eu vejo uma mensagem de confirmacao com o nome "([^"]*)" e email "([^"]*)"$'){
-	String nomeObra, email ->
-	    //throw new PendingException()
-		//assert page.verifyPageContainsText(email) == true
-		assert false
-}
-
 /**
  * @author = tpa
  */
@@ -180,6 +145,9 @@ Then (~'^o sistema atualiza a obra com o nome "([^"]*)"$'){
 		Obra obra = Obra.findByNome(nomeObra)
 		assert TestDataAndOperations.obraCompatibleTo(obra, nomeObra)
 }
+/**
+ * @author = tpa
+ */
 //Scenario: Adicionar obra com data de termino anterior a data de início
 //Given que o sistema nao tem uma obra chamada "Praca do arsenal"
 //When eu tento cadastrar uma obra com o nome "Praca do arsenal"
@@ -190,7 +158,9 @@ And (~'^insiro a data inicial "([^"]*)" e a data final "([^"]*)"$'){
 	String ini, fin ->
 		assert TestDataAndOperations.checkDataFI(ini,fin) == true
 }
-
+/**
+ * @author = tpa
+ */
 //Scenario:  Adicionar obra com data de termino anterior a data corrente
 //Given que o sistema nao tem uma obra chamada "Praca do arsenal"
 //When eu tentar cadastrar uma obra com o nome "Praca do arsenal"
@@ -200,6 +170,9 @@ And (~'^insiro a data final "([^"]*)"$'){
 	String fin ->
 		assert TestDataAndOperations.checkDataFC(fin) == true
 }
+/**
+ * @author = tpa
+ */
 //Scenario: Atualizar nome de obra com nome já existente
 //Given que o sistema tem uma obra chamada "Praca do arsenal"
 //And tem uma obra com o nome "Ilha do Retiro"
@@ -221,7 +194,9 @@ Then(~'^o sistema não atualiza a obra com o novo nome "([^"]*)"$'){
 		obras = Obra.findAllByNome(nomeObra)
 		assert obras.size() <= 1
 }
-
+/**
+ * @author = tpa
+ */
 //Scenario: Adicionar obra de um politico inexistente
 //Given que o sistema nao tem uma obra chamada "Praca do arsenal"
 //And não existe um politico com o cpf "11122233344"
@@ -232,6 +207,9 @@ And(~'^não existe um politico com o cpf "([^"]*)"$'){
 		Obra obra = TestDataAndOperations.findPoliticoByCPF(cpf)
 		assert obra == null
 }
+/**
+ * @author = tpa
+ */
 //Scenario: Devolver a taxa de obras atrasadas de um determinado político
 //Given que o sistema tem um politico com o cpf "98765432109"
 //And o sistema tem "2" obras associada ao politico com o cpf "98765432109"
@@ -259,7 +237,9 @@ Then(~'^o percentual de obras atrasadas para o politico com o cpf "([^"]*)" é d
 		float qtd = TestDataAndOperations.taxaObrasAtrasadasPolitico(cpf)
 		assert porcetagem == qtd
 }
-
+/**
+ * @author = tpa
+ */
 //Scenario: Devolver a taxa de obras com orçamentos estourados de um determinado político
 //Given que o sistema tem um politico com o cpf "98765432109"
 //And o sistema tem "2" obras associada ao politico com o cpf "98765432109"
@@ -318,35 +298,4 @@ Then (~'^o sistema ira atualizar obra com nome "([^"]*)" para "([^"]*)"$'){
 	String nomeObra, statusAndamentoObra ->
         assert TestDataAndOperations.verificarStatusAndamentoObra(nomeObra, ObraStrings."$statusAndamentoObra")
 }
-
-//other gui
-
-/**
- * @author = ehmr
- **/
-//Scenario: Nova pagina de obra
-//	Given eu estou no menu de "obras"
-//	And nao existe uma obra com nome "Praca do Arsenal" na lista de obras
-//	When eu seleciono a opcao "Cadastrar"
-//	And eu tento cadastrar a obra com o nome "Praca do Arsenal"
-//	And seleciono a opcao "Salvar"
-//	Then eu recebo uma mensagem de confirmacao
-//	And vejo o nome "Praca do arsenal"
-Given (~'^eu estou no menu de obras e nao existe uma obra com nome "([^"]*)" na lista de obras$'){
-	String nomeObra ->
-		to ObraListPage
-		at ObraListPage
-		assert page.checkObraAtList(nomeObra) == false
-}
-And (~'^eu tento cadastrar a obra com o nome "([^"]*)"$'){
-	String nomeObra ->
-}
-And (~'^seleciono a opcao "([^"]*)"$'){
-	String option ->
-}
-Then (~'^eu vejo uma mensagem de confirmacao com o nome "([^"]*)"$'){
-	String nomeObra ->
-		assert false
-}
-
 

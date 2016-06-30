@@ -12,6 +12,5 @@
 --Output from Adicionar obra de um politico inexistente--
 --Output from Devolver a taxa de obras atrasadas de um determinado político--
 --Output from Devolver a taxa de obras com orçamentos estourados de um determinado político--
---Output from Receber atualizacoes da obra por email--
---Output from Visualizar obra--
---Output from Nova pagina de obra--
+--Output from Visualizar obra--Starting ChromeDriver 2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4) on port 32863
+Only local connections are allowed.

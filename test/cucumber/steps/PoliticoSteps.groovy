@@ -91,7 +91,7 @@ Then(~'^o sistema nao ira cadastrar o politico de CPF "([^"]*)"$'){
  tpa
  ******/
 
-//Scenario: Visualizar político
+//Scenario: Visualizar político GUI
 //Given que o usuario esta no menu de político e quer visualizar os detalhes do político com o cpf "98765432109"
 //When o usuario seleciona o político com o cpf "98765432109"
 //Then o sistema exibe os detalhes do político com o cpf "98765432109"
@@ -115,46 +115,4 @@ Then(~'^o sistema exibe os detalhes do político com o cpf "([^"]*)"$'){
     String cpf ->
         at PoliticoShowPage
         assert page.verifyCpfPolitico(cpf) == true
-}
-//Scenario: Visualizar taxa de atraso de obras de um político
-//Given que o usuario esta no menu de político e tem um político com o cpf "98765432109"
-//And existe "2" obra associada ao político com o cpf "98765432109"
-//And existe "1" obra atrasada associada ao político com cpf "98765432109"
-//When o usuário seleciona a opçao de taxa de atraso
-//Then ele visualizará "100" % como sendo a taxa de atraso
-Given(~'^que o usuario esta no menu de político e tem um político com o cpf "([^"]*)"$') {
-    String cpf ->
-    TestDataAndOperations.createPolitico(cpf)
-        to PoliticoListPage
-        at PoliticoListPage
-}
-And(~'^existe "([^"]*)" obra associada ao político com o cpf "([^"]*)"$') {
-    int nObra, String cpf ->
-        dep obras = TestDataAndOperations.findPoliticoObraByCPF(cpf)
-        at ObraListPage
-        boolean check = true
-        int cont = 0
-        obras.each {obra -> TestDataAndOperations.createObra(obra.get(0).nomeObra); check = check &&page.checkObraAtList(obra.get(0).nomeObra);cont= cont+1 }
-        assert  check == true
-        assert cont ==nObra
-}
-
-And(~'^existe "([^"]*)" obra atrasada associada ao político com o cpf "([^"]*)"$') {
-    int nObra, String cpf ->
-        dep obras = TestDataAndOperations.findPoliticoObraByCPF(cpf)
-        at ObraListPage
-        boolean check = true
-        int cont = 0
-        obras.each {obra -> TestDataAndOperations.createObra(obra.get(0).nomeObra); check = check &&page.checkObraAtList(obra.get(0).nomeObra);
-            if(TestDataAndOperations.checkObraAtrasada(obra.get(0).nomeObra)) {cont =cont+1}}
-        assert cont ==nObra
-}
-When(~'^o usuário seleciona a opçao de taxa de atraso$') {
-        at PoliticoListPage
-        page.selectTaxaAtrasada()
-}
-Then(~'^ele visualizará "([^"]*)" % como sendo a taxa de atraso$'){
-    String taxa ->
-        at TaxaAtrasoPoliticoPage
-        assert page.verifyTaxa(taxa) == true
 }

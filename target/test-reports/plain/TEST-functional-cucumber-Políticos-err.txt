@@ -3,7 +3,4 @@
 --Output from Adicionar politico existente--
 --Output from Atualizar o id de um politico--
 --Output from Remover político existente--
---Output from Novo político--
---Output from Editar informações de um politico--
 --Output from Visualizar político--
---Output from Visualizar taxa de atraso de obras de um político--
